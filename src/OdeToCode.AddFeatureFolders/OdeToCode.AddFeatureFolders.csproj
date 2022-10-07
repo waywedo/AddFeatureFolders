@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Description>Use feature folders to organize controllers and views in ASP.NET Core</Description>
     <Copyright>OdeToCode LLC</Copyright>
-    <VersionPrefix>2.0.3</VersionPrefix>
+    <VersionPrefix>3.0.0</VersionPrefix>
     <Authors>K. Scott Allen</Authors>
-    <TargetFrameworks>netstandard1.6;netstandard2.0;net452</TargetFrameworks>
+	  <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>OdeToCode.AddFeatureFolders</AssemblyName>
-    <PackageId>OdeToCode.AddFeatureFolders</PackageId>
+    <PackageId>waywedo.OdeToCode.AddFeatureFolders</PackageId>
     <PackageTags>feature folders;asp.net core</PackageTags>
     <PackageProjectUrl>https://github.com/OdeToCode/AddFeatureFolders/</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/master/LICENSE</PackageLicenseUrl>
@@ -15,22 +15,12 @@
     <RepositoryUrl>https://raw.githubusercontent.com/OdeToCode/AddFeatureFolders/</RepositoryUrl>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="1.0.3" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.0.2" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="1.0.3" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="1.0.2" />
-    
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>
