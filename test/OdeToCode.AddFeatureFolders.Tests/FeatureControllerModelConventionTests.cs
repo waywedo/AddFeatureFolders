@@ -67,7 +67,7 @@ namespace Project.Name.Features.Foo.Bar.Baz
 namespace Project.Name.Features
 {
     internal class HomeController
-    {       
+    {
     }
 }
 
@@ -75,6 +75,6 @@ namespace Controllers
 {
     internal class AboutController
     {
-        
+
     }
 }
