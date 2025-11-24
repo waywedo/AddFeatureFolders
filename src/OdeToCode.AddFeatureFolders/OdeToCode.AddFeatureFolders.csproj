@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<Description>Use feature folders to organize controllers and views in ASP.NET Core</Description>
 		<Copyright>OdeToCode LLC</Copyright>
-		<VersionPrefix>3.0.4</VersionPrefix>
+		<VersionPrefix>3.0.5</VersionPrefix>
 		<Authors>K. Scott Allen</Authors>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<AssemblyName>OdeToCode.AddFeatureFolders</AssemblyName>
 		<PackageId>waywedo.OdeToCode.AddFeatureFolders</PackageId>
 		<PackageTags>feature folders;asp.net core</PackageTags>
@@ -16,10 +16,6 @@
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />

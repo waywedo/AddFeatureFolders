@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/sample/">
+    <Project Path="sample/WebApplication/WebApplication.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="NuGet.Config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/OdeToCode.AddFeatureFolders/OdeToCode.AddFeatureFolders.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/OdeToCode.AddFeatureFolders.Tests/OdeToCode.AddFeatureFolders.Tests.csproj" />
+  </Folder>
+</Solution>

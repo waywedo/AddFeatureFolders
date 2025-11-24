@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 namespace WebApplication
 {
@@ -7,11 +7,16 @@ namespace WebApplication
     {
         public static void Main(string[] args)
         {
-            var host = WebHost.CreateDefaultBuilder()
-                .UseStartup<Startup>()
-                .Build();
+            CreateHostBuilder(args).Build().Run();
+        }
 
-            host.Run();
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
         }
     }
 }
